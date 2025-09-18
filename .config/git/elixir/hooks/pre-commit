@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "Running mix format..."
+if mix format --check-formatted; then
+  echo "Done. Nothing to format."
+  exit 0
+else
+  echo "Formatting errors detected. Run 'mix format' to fix."
+  exit 1
+fi

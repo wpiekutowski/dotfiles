@@ -1,45 +1,41 @@
 #!/bin/bash
 
 # This script creates symbolic links from the home directory to the files
-# in this dotfiles directory.
+# in this dotfiles directory. It recursively finds all files and creates
+# the necessary directory structure in the home directory.
 
 # Get the absolute path to the directory where this script is located.
 # This ensures that the script can be run from any working directory.
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 HOME_DIR="$HOME"
 
-# List of files and directories to ignore in the dotfiles directory.
-# Add any other files you don't want to be symlinked here.
-IGNORE_LIST=("." ".." ".git" "host" "setup.sh" "README.md" "LICENSE")
-
 echo "Starting dotfile setup..."
 echo "Dotfiles directory: $DOTFILES_DIR"
 echo "Home directory:     $HOME_DIR"
 echo
 
-# Function to check if a file is in the ignore list.
-is_ignored() {
-    local filename="$1"
-    for ignored_item in "${IGNORE_LIST[@]}"; do
-        if [[ "$filename" == "$ignored_item" ]]; then
-            return 0 # 0 for true in bash
-        fi
-    done
-    return 1 # 1 for false
-}
+# Use find to locate all files, excluding specified directories and files.
+# The -path ... -prune -o ... syntax is the standard way to exclude paths.
+find "$DOTFILES_DIR" \
+    -path "$DOTFILES_DIR/.git" -prune -o \
+    -path "$DOTFILES_DIR/host" -prune -o \
+    -path "$DOTFILES_DIR/setup.sh" -prune -o \
+    -path "$DOTFILES_DIR/LICENSE" -prune -o \
+    -path "$DOTFILES_DIR/README.md" -prune -o \
+    -type f -print | while read -r source_path; do
 
-# Iterate over all items in the dotfiles directory.
-for file in "$DOTFILES_DIR"/.*; do
-    filename=$(basename "$file")
-    source_path="$DOTFILES_DIR/$filename"
-    target_path="$HOME_DIR/$filename"
+    # Determine the path relative to the dotfiles directory to create the target path.
+    relative_path="${source_path#$DOTFILES_DIR/}"
+    target_path="$HOME_DIR/$relative_path"
+    target_dir=$(dirname "$target_path")
 
-    # Skip ignored files
-    if is_ignored "$filename"; then
-        continue
+    echo "Processing '$relative_path'..."
+
+    # Create the parent directory in $HOME if it doesn't exist.
+    if [ ! -d "$target_dir" ]; then
+        echo "  -> Creating directory '$target_dir'."
+        mkdir -p "$target_dir"
     fi
-
-    echo "Processing '$filename'..."
 
     # Case 1: A valid symlink already exists.
     if [ -L "$target_path" ] && [ "$(readlink "$target_path")" == "$source_path" ]; then
@@ -56,7 +52,6 @@ for file in "$DOTFILES_DIR"/.*; do
         echo "     Showing diff between your file and the repository's version:"
 
         # Show diff, using colordiff if available for better readability.
-        # The '|| true' prevents the script from exiting if diff finds differences.
         if command -v colordiff &> /dev/null; then
             diff --unified "$target_path" "$source_path" | colordiff || true
         else
@@ -72,10 +67,10 @@ for file in "$DOTFILES_DIR"/.*; do
         else
             echo "  -> Skipping."
         fi
-    # Case 4: A directory exists at the target location.
+    # Case 4: A directory exists where a file should be.
     elif [ -d "$target_path" ]; then
-        echo "  -> WARNING: A directory already exists at '$target_path'."
-        read -p "     Overwrite this directory with a symlink? (y/N) " -n 1 -r
+        echo "  -> WARNING: A directory exists at '$target_path' where a file should be."
+        read -p "     Remove directory and replace with a symlink? (y/N) " -n 1 -r
         echo
         if [[ $REPLY =~ ^[Yy]$ ]]; then
             rm -rf "$target_path"

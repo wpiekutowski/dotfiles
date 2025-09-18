@@ -1,0 +1,9 @@
+.DS_Store
+.aider*
+.bundle
+.vscode/settings.json
+.claude
+CLAUDE.md
+CLAUDE.local.md
+.serena
+mise.local.toml

@@ -1,0 +1,134 @@
+[alias]
+    # Difftastic aliases, so `git dlog` is `git log` with difftastic and so on.
+    dlog = -c diff.external=difft log --ext-diff
+    dl = -c diff.external=difft log --ext-diff
+    dshow = -c diff.external=difft show --ext-diff
+    ds = -c diff.external=difft show --ext-diff
+    ddiff = -c diff.external=difft diff
+    dd = -c diff.external=difft diff
+
+[user]
+	name = Wojciech Piekutowski
+	email = wojciech@piekutowski.net
+
+[core]
+	autocrlf = input
+
+[merge]
+	tool = vscode
+
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+	trustExitCode = true
+
+#[diff "json"]
+#        textconv = "cat \"$1\" | json_pp --json_opt=canonical,pretty"
+
+[diff "docker-compose-yaml"]
+    # Optional: normalize YAML first (e.g., with yq) for stable diffs
+    # command = ~/bin/yamldiff
+
+    # ---- Top-level identifiers ----
+    # Compose project name
+    xfuncname = ^[[:space:]]*name:[[:space:]].*$
+    # Major sections
+    xfuncname = ^[[:space:]]*(services|volumes|networks|configs|secrets|profiles):[[:space:]]*$
+
+    # ---- Service names (assumes 2-space indent under 'services:') ----
+    # Matches: '  web:' '  api:' etc.
+    xfuncname = ^[[:space:]]{2}[A-Za-z0-9][A-Za-z0-9_.-]*:[[:space:]]*$
+
+    # ---- Per-service hot spots (4-space indent) ----
+    # Highlights common knobs inside a service block
+    xfuncname = ^[[:space:]]{4}(image|build|command|entrypoint|container_name|restart|user|working_dir|hostname|platform|runtime|ipc|pid|privileged|read_only|stop_(signal|grace_period)|init):[[:space:]].*$
+    xfuncname = ^[[:space:]]{4}(environment|env_file|labels|secrets|configs|healthcheck|deploy|depends_on|profiles|extra_hosts):[[:space:]]*$
+    xfuncname = ^[[:space:]]{4}(ports|expose|volumes|devices|tmpfs|ulimits|cap_add|cap_drop|sysctls|networks):[[:space:]]*$
+
+    # ---- Named objects under other top-level sections (2-space indent) ----
+    # e.g., '  pgdata:' under 'volumes:', '  backend:' under 'networks:'
+    xfuncname = ^[[:space:]]{2}[A-Za-z0-9][A-Za-z0-9_.-]*:[[:space:]]*$
+
+    # ---- Generic YAML key fallback ----
+    # Works anywhere; keep last so specific rules win first.
+    #xfuncname = ^[[:space:]]*(-[[:space:]]*)?(["'][^"']+["']|[A-Za-z0-9_.-]+)[[:space:]]*$
+
+
+[column]
+        ui = auto
+
+[branch]
+        sort = -committerdate
+
+[tag]
+        sort = version:refname
+
+[init]
+        defaultBranch = main
+
+[diff]
+        algorithm = histogram
+        colorMoved = plain
+        mnemonicPrefix = true
+        renames = true
+	colorMovedWS = allow-indentation-change
+	# Other diff/merge tools
+	# https://difftastic.wilfred.me.uk/introduction.html
+	# Supports Elixir, Gleam
+	# https://gitbutler.com
+	# GUI git-like client
+	# https://dandavison.github.io/delta/
+	# Elixir support, no Gleam
+	# https://mergiraf.org
+	# No Elixir or Gleam support. Does AST merges
+	# https://github.com/so-fancy/diff-so-fancy
+	external = difft
+
+[push]
+        default = simple
+        autoSetupRemote = true
+        followTags = true
+
+[fetch]
+        prune = true
+        pruneTags = true
+        all = true
+
+[help]
+        autocorrect = prompt
+
+[commit]
+        verbose = true
+
+[rerere]
+        enabled = true
+        autoupdate = true
+
+[rebase]
+        autoSquash = true
+        autoStash = true
+        updateRefs = true
+
+[core]
+        # fsmonitor = true
+        # untrackedCache = true
+	
+[merge]
+        # (just 'diff3' if git version < 2.3)
+        conflictstyle = zdiff3
+
+[pull]
+        rebase = true
+
+[log]
+	date = iso-local
+
+[color "diff"]
+	whitespace = red reverse
+
+[apply]
+	# Remove trailing whitespaces
+	whitespace = fix
+
+[merge "mergiraf"]
+	name = mergiraf
+	driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P -l %L
