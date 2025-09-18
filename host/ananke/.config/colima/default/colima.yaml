@@ -1,0 +1,13 @@
+# Number of CPUs to be allocated to the virtual machine.
+# Default: 2
+cpu: 11
+
+# Size of the disk in GiB to be allocated to the virtual machine.
+# NOTE: value can only be increased after virtual machine has been created.
+#
+# Default: 100
+disk: 100
+
+# Size of the memory in GiB to be allocated to the virtual machine.
+# Default: 2
+memory: 24
