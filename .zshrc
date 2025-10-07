@@ -1,11 +1,23 @@
-export HISTSIZE=1000000000
-export SAVEHIST=1000000000
+export HISTSIZE=10000
+export SAVEHIST=10000
 export EDITOR="nvim"
 export XDG_CONFIG_HOME="$HOME/.config"
 
 export ELIXIR_ERL_OPTIONS="-kernel shell_history enabled"
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [[ -f "/opt/homebrew/bin/brew" ]]; then
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
+setopt histignorealldups
+
+autoload -Uz promptinit
+promptinit
 
 autoload -Uz compinit
 if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
