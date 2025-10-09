@@ -18,8 +18,12 @@ echo
 # The -path ... -prune -o ... syntax is the standard way to exclude paths.
 find "$DOTFILES_DIR" \
     -path "$DOTFILES_DIR/.git" -prune -o \
+    -path "$DOTFILES_DIR/.gitmodules" -prune -o \
+    -path "$DOTFILES_DIR/claude-statusline-command" -prune -o \
+    -path "$DOTFILES_DIR/dev" -prune -o \
     -path "$DOTFILES_DIR/host" -prune -o \
     -path "$DOTFILES_DIR/setup.sh" -prune -o \
+    -path "$DOTFILES_DIR/setup-linux-apt.sh" -prune -o \
     -path "$DOTFILES_DIR/LICENSE" -prune -o \
     -path "$DOTFILES_DIR/README.md" -prune -o \
     -type f -print | while read -r source_path; do

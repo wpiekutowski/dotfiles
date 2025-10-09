@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Pre-push hook to format code before push
+# If any files get formatted, the push will be cancelled so you can commit the changes
+
+echo "Running format before push..."
+
+# Run the format command
+yarn format
+
+# Check if any files were modified by the formatting
+if ! git diff --quiet; then
+    echo ""
+    echo "❌ Push cancelled: Code was formatted."
+    echo "Files have been automatically formatted. Please review and commit the changes, then push again."
+    exit 1
+fi
+
+echo "✅ No formatting changes needed. Proceeding with push..."
+exit 0

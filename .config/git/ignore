@@ -2,8 +2,8 @@
 .aider*
 .bundle
 .vscode/settings.json
-.claude
-CLAUDE.md
+.claude/settings.local.json
 CLAUDE.local.md
+CLAUDE.md
 .serena
 mise.local.toml
