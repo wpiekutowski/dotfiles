@@ -1,0 +1,3 @@
+[submodule "claude-statusline-command"]
+	path = claude-statusline-command
+	url = https://gist.github.com/b971d02b159eddb14d1692241c0ca34f.git
