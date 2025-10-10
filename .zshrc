@@ -28,8 +28,6 @@ else
 	compinit -C;
 fi;
 
-alias git-dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
 eval "$(direnv hook zsh)"
 eval "$(mise activate zsh)"
 
