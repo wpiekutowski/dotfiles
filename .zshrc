@@ -14,6 +14,8 @@ fi
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
+alias zed-editor='open -a "Zed Preview"'
+
 setopt histignorealldups
 
 autoload -Uz promptinit
