@@ -32,3 +32,7 @@ eval "$(direnv hook zsh)"
 eval "$(mise activate zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+if [[ -f "$HOME/.claude/local/claude" ]]; then
+	alias claude="$HOME/.claude/local/claude"
+fi
