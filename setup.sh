@@ -19,6 +19,7 @@ echo
 find "$DOTFILES_DIR" \
     -path "$DOTFILES_DIR/.git" -prune -o \
     -path "$DOTFILES_DIR/.gitmodules" -prune -o \
+    -path "$DOTFILES_DIR/better-touch-tool" -prune -o \
     -path "$DOTFILES_DIR/claude-statusline-command" -prune -o \
     -path "$DOTFILES_DIR/dev" -prune -o \
     -path "$DOTFILES_DIR/host" -prune -o \
