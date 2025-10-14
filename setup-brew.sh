@@ -28,6 +28,7 @@ brew install \
 brew install \
         asdf \
         betterdisplay \
+	bettertouchtool \
 	chatgpt \
 	codex \
         colima \
