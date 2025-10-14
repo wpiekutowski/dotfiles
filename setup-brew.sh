@@ -51,7 +51,6 @@ brew install \
 	uv \
         visual-studio-code \
         wget \
-	# YubiKey manager
 	ykman \
         yq \
 	zsh \
