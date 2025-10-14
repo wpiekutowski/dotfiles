@@ -59,6 +59,11 @@ run = ["move-node-to-workspace 2"]
 
 [[on-window-detected]]
 if.during-aerospace-startup = true
+if.app-id = "dev.zed.Zed-Preview"
+run = ["move-node-to-workspace 2"]
+
+[[on-window-detected]]
+if.during-aerospace-startup = true
 if.app-id = "com.mitchellh.ghostty"
 run = ["move-node-to-workspace 2"]
 
@@ -70,41 +75,41 @@ run = ["move-node-to-workspace 3"]
 [[on-window-detected]]
 if.during-aerospace-startup = true
 if.app-id = "com.apple.Safari"
-run = ["move-node-to-workspace S"]
+run = ["move-node-to-workspace B"]
 
 # Keep these apps on these workspaces
 [[on-window-detected]]
 if.app-id = "com.apple.reminders"
-run = ["move-node-to-workspace 8"]
+run = ["move-node-to-workspace R"]
 
 [[on-window-detected]]
 if.app-id = "com.apple.Notes"
-run = ["move-node-to-workspace 8"]
+run = ["move-node-to-workspace N"]
 
 [[on-window-detected]]
 if.app-id = "com.apple.mail"
-run = ["move-node-to-workspace 8"]
+run = ["move-node-to-workspace E"]
 
 [[on-window-detected]]
 if.app-id = "com.microsoft.Outlook"
-run = ["move-node-to-workspace 8"]
+run = ["move-node-to-workspace E"]
 
 [[on-window-detected]]
 if.app-id = "com.apple.iCal"
-run = ["move-node-to-workspace 8"]
+run = ["move-node-to-workspace C"]
 
 [[on-window-detected]]
 if.app-id = "com.apple.Safari"
 if.window-title-regex-substring = "toggl"
-run = ["move-node-to-workspace 9"]
+run = ["move-node-to-workspace T"]
 
 [[on-window-detected]]
 if.app-id = "com.tinyspeck.slackmacgap"
-run = ["move-node-to-workspace 9"]
+run = ["move-node-to-workspace S"]
 
 [[on-window-detected]]
 if.app-id = "com.openai.chat"
-run = ["move-node-to-workspace G"]
+run = ["move-node-to-workspace A"]
 
 # Workaround for macOS tab bug
 [[on-window-detected]]
@@ -238,7 +243,6 @@ D = ['U2412M']
     # I need accents
     #alt-e = 'workspace E'
     alt-f = 'workspace F'
-    # ChatGPT
     alt-g = 'workspace G'
     alt-i = 'workspace I'
     # MacBook Pro screen
