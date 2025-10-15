@@ -22,6 +22,7 @@ find "$DOTFILES_DIR" \
     -path "$DOTFILES_DIR/better-touch-tool" -prune -o \
     -path "$DOTFILES_DIR/claude-statusline-command" -prune -o \
     -path "$DOTFILES_DIR/dev" -prune -o \
+    -path "$DOTFILES_DIR/git-templates" -prune -o \
     -path "$DOTFILES_DIR/host" -prune -o \
     -path "$DOTFILES_DIR/setup.sh" -prune -o \
     -path "$DOTFILES_DIR/setup-linux-apt.sh" -prune -o \

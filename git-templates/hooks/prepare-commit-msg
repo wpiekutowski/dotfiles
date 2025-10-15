@@ -1,0 +1,36 @@
+#!/bin/sh
+# Prepend [#ISSUE] from branch name to the commit message BEFORE the editor opens.
+# Examples:
+#   123-fix            -> [#123]
+#   feature/456-what   -> [#456]
+#   feature/789_foo    -> [#789]
+echo "Preparing...."
+MSG_FILE="$1"     # .git/COMMIT_EDITMSG
+SOURCE="$2"       # message, template, merge, squash, commit, etc.
+
+# Get current branch
+BRANCH="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "")"
+# Extract first number sequence
+ISSUE="$(printf "%s" "$BRANCH" | grep -oE '[0-9]+' | head -n1)"
+
+# If no issue number, do nothing
+[ -z "$ISSUE" ] && exit 0
+
+# Skip merge/squash messages (Git generates them)
+case "$SOURCE" in
+  merge|squash) exit 0 ;;
+esac
+
+# If the message already starts with a ticket like [#123], do nothing
+if grep -qE '^\[#([0-9]+)\]' "$MSG_FILE"; then
+  exit 0
+fi
+
+# Prepend the prefix to the current message (works with empty/new messages and templates)
+TMP="$(mktemp)"
+printf "[#%s] " "$ISSUE" > "$TMP"
+cat "$MSG_FILE" >> "$TMP"
+cat "$TMP" > "$MSG_FILE"
+rm -f "$TMP"
+
+exit 0
