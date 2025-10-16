@@ -17,13 +17,6 @@
 [core]
 	autocrlf = input
 
-[merge]
-	tool = vscode
-
-[mergetool "vscode"]
-	cmd = code --wait $MERGED
-	trustExitCode = true
-
 #[diff "json"]
 #        textconv = "cat \"$1\" | json_pp --json_opt=canonical,pretty"
 
