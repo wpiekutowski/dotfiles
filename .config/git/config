@@ -16,6 +16,15 @@
 
 [core]
 	autocrlf = input
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	hyperlinks = true
+	hyperlinks-file-link-format = "zed://file/{path}:{line}"
 
 #[diff "json"]
 #        textconv = "cat \"$1\" | json_pp --json_opt=canonical,pretty"
@@ -63,7 +72,7 @@
 
 [diff]
         algorithm = histogram
-        colorMoved = plain
+        colorMoved = default
         mnemonicPrefix = true
         renames = true
 	colorMovedWS = allow-indentation-change
@@ -109,7 +118,7 @@
         # untrackedCache = true
 	
 [merge]
-        # (just 'diff3' if git version < 2.3)
+	# zdiff3 isn't supported by `mergiraf solve`. Switch to diff3 temporarily to fix it
         conflictstyle = zdiff3
 
 [pull]
@@ -128,3 +137,5 @@
 [merge "mergiraf"]
 	name = mergiraf
 	driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P -l %L
+[grep]
+	lineNumber = true

@@ -27,3 +27,5 @@ compose.yml diff=docker-compose-yaml
 compose.yaml diff=docker-compose-yaml
 *.compose.yml diff=docker-compose-yaml
 *.compose.yaml diff=docker-compose-yaml
+
+* merge=mergiraf

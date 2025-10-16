@@ -32,6 +32,7 @@ brew install \
 	chatgpt \
 	codex \
         colima \
+	git-delta \
 	devcontainer \
         difftastic \
         direnv \
@@ -43,9 +44,11 @@ brew install \
         iterm2 \
 	itermai \
         jq \
+	mergiraf \
         mise \
         neovim \
         nodejs \
+	ripgrep \
         tmux \
         ungoogled-chromium \
 	uv \

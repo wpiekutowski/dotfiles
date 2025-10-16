@@ -3,6 +3,9 @@ export SAVEHIST=10000
 export EDITOR="nvim"
 export XDG_CONFIG_HOME="$HOME/.config"
 
+# difftastic
+export DFT_PARSE_ERROR_LIMIT=20
+
 export ELIXIR_ERL_OPTIONS="-kernel shell_history enabled"
 
 if [[ -f "/opt/homebrew/bin/brew" ]]; then
