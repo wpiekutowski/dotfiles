@@ -4,7 +4,7 @@
 #   123-fix            -> [#123]
 #   feature/456-what   -> [#456]
 #   feature/789_foo    -> [#789]
-echo "Preparing...."
+
 MSG_FILE="$1"     # .git/COMMIT_EDITMSG
 SOURCE="$2"       # message, template, merge, squash, commit, etc.
 
