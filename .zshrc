@@ -2,6 +2,7 @@ export HISTSIZE=10000
 export SAVEHIST=10000
 export EDITOR="nvim"
 export XDG_CONFIG_HOME="$HOME/.config"
+export PATH="$PATH:/usr/local/bin"
 
 # difftastic
 export DFT_PARSE_ERROR_LIMIT=20
