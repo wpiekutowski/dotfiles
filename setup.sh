@@ -25,7 +25,7 @@ find "$DOTFILES_DIR" \
     -path "$DOTFILES_DIR/git-templates" -prune -o \
     -path "$DOTFILES_DIR/host" -prune -o \
     -path "$DOTFILES_DIR/setup.sh" -prune -o \
-    -path "$DOTFILES_DIR/setup-linux-apt.sh" -prune -o \
+    -path "$DOTFILES_DIR/setup-*.sh" -prune -o \
     -path "$DOTFILES_DIR/LICENSE" -prune -o \
     -path "$DOTFILES_DIR/README.md" -prune -o \
     -type f -print | while read -r source_path; do
