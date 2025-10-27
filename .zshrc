@@ -74,7 +74,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 # Custom:
 # zsh-kubectl-prompt: https://github.com/superbrothers/zsh-kubectl-prompt
-plugins=(aliases colored-man-pages docker git kubectl safe-paste zsh-kubectl-prompt)
+plugins=(aliases colored-man-pages docker genpass git kubectl safe-paste zsh-kubectl-prompt)
 
 RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
 
