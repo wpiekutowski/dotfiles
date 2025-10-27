@@ -1,0 +1,17 @@
+# Codebook claims to perform code-aware spellchecking
+
+dictionaries = ["en_us", "nl_nl"]
+
+words = [
+    "bitnami",
+    "iam",
+    "jsonpath",
+    "kubectl",
+    "masterkey",
+    "medi",
+    "nslookup",
+    "psql",
+    "sslip",
+    "zitadel",
+    "zitadeldev",
+]
