@@ -46,6 +46,7 @@ brew install \
         jq \
 	mergiraf \
         mise \
+	mtr \
         neovim \
         nodejs \
 	ripgrep \
