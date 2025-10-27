@@ -86,7 +86,11 @@
 	# https://mergiraf.org
 	# No Elixir or Gleam support. Does AST merges
 	# https://github.com/so-fancy/diff-so-fancy
-	external = difft
+
+	# This changes git diff to use difftastic.
+	# However, I need to use `dshow` and `dlog` anyway, or `--ext-diff` flag,
+	# so I'm going to use `ddiff` for consistency.
+	#external = difft
 
 [push]
         default = simple
