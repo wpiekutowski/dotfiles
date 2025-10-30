@@ -182,15 +182,8 @@ D = ['U2412M']
     # (like in i3)
     alt-enter = '''exec-and-forget osascript -e '
     tell application "iTerm2"
-	create window with default profile
-        activate
-    end tell'
-    '''
-
-    alt-period = '''exec-and-forget osascript -e '
-    tell application "Safari"
-        make new document at end of documents
-        activate
+      create window with default profile
+      activate
     end tell'
     '''
 
