@@ -16,53 +16,55 @@ brew install mediosz/tap/swipeaerospace
 
 # objective-see
 brew install \
-	blockblock \
-	reikey \
-	ransomwhere \
-	knockknock \
-	taskexplorer \
-	netiquette \
-	oversight \
+  blockblock \
+  reikey \
+  ransomwhere \
+  knockknock \
+  taskexplorer \
+  netiquette \
+  oversight \
 
 # Colima provides VM for docker
 brew install \
-        asdf \
-        betterdisplay \
-	bettertouchtool \
-	chatgpt \
-	codex \
-        colima \
-	git-delta \
-	devcontainer \
-        difftastic \
-        direnv \
-        docker \
-        docker-buildx \
-        docker-compose \
-        docker-credential-helper \
-        entr \
-        iterm2 \
-	itermai \
-        jq \
-	mergiraf \
-        mise \
-	mtr \
-        neovim \
-        nodejs \
-	ripgrep \
-        tmux \
-        ungoogled-chromium \
-	uv \
-        visual-studio-code \
-        wget \
-	ykman \
-        yq \
-	zsh \
+  asdf \
+  betterdisplay \
+  bettertouchtool \
+  chatgpt \
+  codex \
+  colima \
+  git-delta \
+  devcontainer \
+  difftastic \
+  direnv \
+  docker \
+  docker-buildx \
+  docker-compose \
+  docker-credential-helper \
+  entr \
+  gpg \
+  iterm2 \
+  itermai \
+  jq \
+  mergiraf \
+  mise \
+  mtr \
+  neovim \
+  nodejs \
+  obsidian \
+  ripgrep \
+  tmux \
+  ungoogled-chromium \
+  uv \
+  visual-studio-code \
+  wget \
+  ykman \
+  yq \
+  zsh \
 
-	# It seems autoupgrade doesn't work when installed via homebrew 
-        # google-chrome \
-	# zed@preview \
-	
-	# Stores credentials in easily accessible way in keychain :(
-	# gh \
+  # It seems autoupgrade doesn't work when installed via homebrew
+  # google-chrome \
+  # zed@preview \
+
+  # Stores credentials in easily accessible way in keychain :(
+  # gh \
 
