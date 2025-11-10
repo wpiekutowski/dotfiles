@@ -1,0 +1,130 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "context_servers": {
+    "serena": {
+      "source": "custom",
+      "enabled": false,
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server",
+        "--context",
+        "ide-assistant"
+        // "--project",
+        //"$(pwd)"
+      ],
+      "env": {}
+    }
+  },
+  "soft_wrap": "editor_width",
+  "ensure_final_newline_on_save": true,
+  "ssh_connections": [
+    {
+      "host": "mk-client",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/workspace"]
+        }
+      ]
+    },
+    {
+      "host": "192.168.64.4",
+      "username": "w",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/home/w/src/zitadel"]
+        }
+      ]
+    }
+  ],
+  "languages": {
+    "SpiceDB": {
+      // "formatter": "language_server"
+      "code_actions_on_format": {
+        "textDocument/formatting": true
+      }
+    } //,
+    // "YAML": {
+    // it converts " to '
+    //   "formatter": "language_server"
+    // }
+  },
+  "lsp": {
+    "yaml-language-server": {
+      "settings": {
+        "yaml": {
+          "format": {
+            "singleQuote": true
+          },
+          "schemas": {
+            "file:///Users/w/src/medikit/zitadel/json-schema/steps.schema.json": [
+              "*zitadel*/**/init-steps.yaml"
+            ],
+            "file:///Users/w/src/medikit/zitadel/json-schema/defaults/defaults.schema.json": [
+              "*zitadel*/**/config.yaml",
+              "*zitadel*/**/secrets.yaml"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "agent": {
+    "default_profile": "write",
+    "always_allow_tool_actions": true,
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-5-latest"
+    },
+    "model_parameters": [],
+    "enable_feedback": false
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "edit_predictions": {
+    "mode": "eager"
+  },
+  "inlay_hints": {
+    "enabled": true,
+    "show_value_hints": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true,
+    "show_background": false,
+    "edit_debounce_ms": 700,
+    "scroll_debounce_ms": 50,
+    "toggle_on_modifiers_press": {
+      "control": false,
+      "alt": false,
+      "shift": false,
+      "platform": false,
+      "function": false
+    }
+  },
+  "base_keymap": "VSCode",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "vim_mode": true,
+  "icon_theme": "Zed (Default)",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "Ayu Dark"
+  }
+}
