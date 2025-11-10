@@ -72,19 +72,14 @@ if.during-aerospace-startup = true
 if.app-id = "com.google.Chrome"
 run = ["move-node-to-workspace 3"]
 
-[[on-window-detected]]
-if.during-aerospace-startup = true
-if.app-id = "com.apple.Safari"
-run = ["move-node-to-workspace B"]
-
 # Keep these apps on these workspaces
 [[on-window-detected]]
-if.app-id = "com.apple.reminders"
-run = ["move-node-to-workspace R"]
+if.app-id = "com.openai.chat"
+run = ["move-node-to-workspace A"]
 
 [[on-window-detected]]
-if.app-id = "com.apple.Notes"
-run = ["move-node-to-workspace N"]
+if.app-id = "com.apple.iCal"
+run = ["move-node-to-workspace C"]
 
 [[on-window-detected]]
 if.app-id = "md.obsidian"
@@ -99,21 +94,45 @@ if.app-id = "com.microsoft.Outlook"
 run = ["move-node-to-workspace E"]
 
 [[on-window-detected]]
-if.app-id = "com.apple.iCal"
-run = ["move-node-to-workspace C"]
+if.app-id = "com.apple.Notes"
+run = ["move-node-to-workspace N"]
 
 [[on-window-detected]]
-if.app-id = "com.apple.Safari"
-if.window-title-regex-substring = "toggl"
-run = ["move-node-to-workspace T"]
+if.app-id = "md.obsidian"
+run = ["move-node-to-workspace O"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.reminders"
+run = ["move-node-to-workspace R"]
 
 [[on-window-detected]]
 if.app-id = "com.tinyspeck.slackmacgap"
 run = ["move-node-to-workspace S"]
 
 [[on-window-detected]]
-if.app-id = "com.openai.chat"
-run = ["move-node-to-workspace A"]
+if.app-id = "us.zoom.xos"
+run = ["move-node-to-workspace Z"]
+
+# Safari windows
+[[on-window-detected]]
+if.app-id = "com.apple.Safari"
+if.window-title-regex-substring = "Toggl"
+run = ["move-node-to-workspace T"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.Safari"
+if.window-title-regex-substring = "Nedap — Zitadel diary"
+run = ["move-node-to-workspace N"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.Safari"
+if.window-title-regex-substring = "GitHub"
+run = ["move-node-to-workspace G"]
+
+[[on-window-detected]]
+if.during-aerospace-startup = true
+if.app-id = "com.apple.Safari"
+run = ["move-node-to-workspace B"]
 
 # Workaround for macOS tab bug
 [[on-window-detected]]
@@ -128,10 +147,6 @@ run = ["move-node-to-workspace Y"]
 [[on-window-detected]]
 if.app-id = "com.agilebits.onepassword7"
 run = ["move-node-to-workspace Y"]
-
-[[on-window-detected]]
-if.app-id = "us.zoom.xos"
-run = ["move-node-to-workspace Z"]
 
 # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
