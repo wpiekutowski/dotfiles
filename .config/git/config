@@ -123,7 +123,8 @@
 	
 [merge]
 	# zdiff3 isn't supported by `mergiraf solve`. Switch to diff3 temporarily to fix it
-        conflictstyle = zdiff3
+ #       conflictstyle = zdiff3
+       conflictstyle = diff3
 
 [pull]
         rebase = true

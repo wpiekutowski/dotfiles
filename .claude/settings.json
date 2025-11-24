@@ -7,5 +7,25 @@
   "statusLine": {
     "type": "command",
     "command": "/bin/bash /Users/w/src/dotfiles/claude-statusline-command/statusline-command.sh"
+  },
+  "alwaysThinkingEnabled": false,
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true,
+    "excludedCommands": [
+    ],
+    "allowUnsandboxedCommands": true,
+    "network": {
+      "allowUnixSockets": [
+      ],
+      "allowLocalBinding": false
+    },
+    "enableWeakerNestedSandbox": false
+  },
+  "permissions": {
+    "deny": [
+      "Read(.envrc)",
+      "Read(~/.aws/**)"
+    ]
   }
 }

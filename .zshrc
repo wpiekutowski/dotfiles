@@ -74,7 +74,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 # Custom:
 # zsh-kubectl-prompt: https://github.com/superbrothers/zsh-kubectl-prompt
-plugins=(aliases colored-man-pages docker genpass git kubectl mise safe-paste zsh-kubectl-prompt)
+plugins=(aliases colored-man-pages docker direnv genpass git kubectl mise safe-paste zsh-kubectl-prompt)
 
 RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
 
@@ -87,7 +87,7 @@ export SAVEHIST=10000
 setopt histignorealldups
 
 export XDG_CONFIG_HOME="$HOME/.config"
-export PATH="$PATH:/usr/local/bin"
+export PATH="/opt/homebrew/opt/postgresql@18/bin:/usr/local/bin:$HOME/node_modules/.bin:$PATH"
 
 if [[ -f "/opt/homebrew/bin/brew" ]]; then
 	eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -129,7 +129,7 @@ export ELIXIR_ERL_OPTIONS="-kernel shell_history enabled"
 alias zed-editor='open -a "Zed Preview"'
 
 if [[ -f "$HOME/.claude/local/claude" ]]; then
-	alias claude="$HOME/.claude/local/claude"
+  alias claude="~/.claude/local/claude"
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

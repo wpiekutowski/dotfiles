@@ -56,6 +56,7 @@ brew install \
   ungoogled-chromium \
   uv \
   visual-studio-code \
+  watch \
   wget \
   ykman \
   yq \
