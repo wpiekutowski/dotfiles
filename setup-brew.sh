@@ -26,7 +26,6 @@ brew install \
 
 # Colima provides VM for docker
 brew install \
-  asdf \
   betterdisplay \
   bettertouchtool \
   chatgpt \
@@ -45,6 +44,7 @@ brew install \
   iterm2 \
   itermai \
   jq \
+  keyboardcleantool \
   mergiraf \
   mise \
   mtr \
