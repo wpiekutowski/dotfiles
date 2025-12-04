@@ -110,6 +110,7 @@ fi
 # difftastic
 export DFT_PARSE_ERROR_LIMIT=20
 
+export MAKEOPTS="-j11"
 export ELIXIR_ERL_OPTIONS="-kernel shell_history enabled"
 
 # Compilation flags
@@ -133,3 +134,4 @@ if [[ -f "$HOME/.claude/local/claude" ]]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /Users/w/.config/op/plugins.sh
