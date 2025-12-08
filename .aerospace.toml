@@ -134,6 +134,11 @@ if.during-aerospace-startup = true
 if.app-id = "com.apple.Safari"
 run = ["move-node-to-workspace B"]
 
+[[on-window-detected]]
+if.app-id = "com.apple.Safari"
+if.window-title-regex-substring = "ChatGPT"
+run = ["move-node-to-workspace A"]
+
 # Workaround for macOS tab bug
 [[on-window-detected]]
 if.app-id = "com.mitchellh.ghostty"

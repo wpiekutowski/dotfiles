@@ -9,7 +9,6 @@
 {
   "context_servers": {
     "serena": {
-      "source": "custom",
       "enabled": false,
       "command": "uvx",
       "args": [
@@ -29,21 +28,22 @@
   "ensure_final_newline_on_save": true,
   "ssh_connections": [
     {
-      "host": "mk-client",
-      "args": [],
+      "nickname": "mk-client",
+      "host": "localhost",
+      "username": "node",
+      "port": 2222,
+      "args": [
+        "-o",
+        "StrictHostKeyChecking=no",
+        "-o",
+        "UserKnownHostsFile=/dev/null",
+        "-o",
+        "GlobalKnownHostsFile=/dev/null"
+      ],
+      "port_forwards": [{ "local_port": 3000, "remote_port": 3000 }],
       "projects": [
         {
-          "paths": ["/workspace"]
-        }
-      ]
-    },
-    {
-      "host": "192.168.64.4",
-      "username": "w",
-      "args": [],
-      "projects": [
-        {
-          "paths": ["/home/w/src/zitadel"]
+          "paths": ["/host_workspace"]
         }
       ]
     }
