@@ -127,7 +127,8 @@ export ELIXIR_ERL_OPTIONS="-kernel shell_history enabled"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias zed-editor='open -a "Zed Preview"'
+alias zed-editor='open -a "Zed"'
+alias zed-editor-preview='open -a "Zed Preview"'
 
 if [[ -f "$HOME/.claude/local/claude" ]]; then
   alias claude="~/.claude/local/claude"
