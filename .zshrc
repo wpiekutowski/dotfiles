@@ -82,12 +82,14 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+export TZ=Europe/Amsterdam
+
 export HISTSIZE=10000
 export SAVEHIST=10000
 setopt histignorealldups
 
 export XDG_CONFIG_HOME="$HOME/.config"
-export PATH="/opt/homebrew/opt/postgresql@18/bin:/usr/local/bin:$HOME/node_modules/.bin:$PATH"
+export PATH="$PATH:/opt/homebrew/opt/postgresql@18/bin:/usr/local/bin:$HOME/node_modules/.bin:$HOME/src/agent-container/bin"
 
 if [[ -f "/opt/homebrew/bin/brew" ]]; then
 	eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -105,6 +107,10 @@ if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
   export EDITOR='nvim'
+fi
+
+if [[ -d "$HOME/Library/Group Containers/2BUA8C4S2C.com.1password" ]]; then
+  export SSH_AUTH_SOCK="$HOME/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 fi
 
 # difftastic

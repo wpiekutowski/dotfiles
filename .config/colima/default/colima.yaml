@@ -16,7 +16,7 @@ memory: 16
 #
 # NOTE: value cannot be changed after virtual machine is created.
 # Default: host
-#arch: aarch64
+arch: aarch64
 
 # Container runtime to be used (docker, containerd).
 #
@@ -27,7 +27,7 @@ runtime: docker
 # Set custom hostname for the virtual machine.
 # Default: colima
 #          colima-profile_name for other profiles
-#hostname: colima
+hostname: colima
 
 # Kubernetes configuration for the virtual machine.
 kubernetes:
@@ -56,7 +56,7 @@ kubernetes:
 #  - sets as active Kubernetes context (if Kubernetes is enabled).
 #  - sets as active Incus remote (for Incus runtime).
 # Default: true
-#autoActivate: true
+autoActivate: true
 
 # Network configurations for the virtual machine.
 network:
@@ -152,7 +152,7 @@ portForwarder: ssh
 
 # Utilise rosetta for amd64 emulation (requires m1 mac and vmType `vz`)
 # Default: false
-rosetta: false
+rosetta: true
 
 # Enable foreign architecture emulation via binfmt (e.g. amd64 on arm64, arm64 on amd64)
 # Default: true
@@ -183,7 +183,7 @@ mountInotify: false
 # Options available for host emulation can be checked with: `qemu-system-$(arch) -cpu help`.
 # Instructions are also supported by appending to the cpu type e.g. "qemu64,+ssse3".
 # Default: host
-#cpuType: ""
+cpuType: ""
 
 # Custom provision scripts for the virtual machine.
 # Provisioning scripts are executed on startup and therefore needs to be idempotent.

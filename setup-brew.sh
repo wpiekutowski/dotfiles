@@ -40,6 +40,7 @@ brew install \
   docker-compose \
   docker-credential-helper \
   entr \
+  font-meslo-for-powerlevel10k \
   gpg \
   iterm2 \
   itermai \

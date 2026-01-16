@@ -17,18 +17,17 @@
         "serena",
         "start-mcp-server",
         "--context",
-        "ide-assistant"
+        "ide-assistant",
         // "--project",
         //"$(pwd)"
       ],
-      "env": {}
-    }
+      "env": {},
+    },
   },
   "soft_wrap": "editor_width",
   "ensure_final_newline_on_save": true,
   "ssh_connections": [
     {
-      "nickname": "mk-client",
       "host": "localhost",
       "username": "node",
       "port": 2222,
@@ -38,23 +37,77 @@
         "-o",
         "UserKnownHostsFile=/dev/null",
         "-o",
-        "GlobalKnownHostsFile=/dev/null"
+        "GlobalKnownHostsFile=/dev/null",
       ],
-      "port_forwards": [{ "local_port": 3000, "remote_port": 3000 }],
       "projects": [
         {
-          "paths": ["/host_workspace"]
-        }
-      ]
-    }
+          "paths": ["/host_workspace"],
+        },
+      ],
+      "nickname": "x-old-mk-client",
+      "port_forwards": [
+        {
+          "local_port": 3000,
+          "remote_port": 3000,
+        },
+        {
+          "local_port": 1455,
+          "remote_port": 1455,
+        },
+      ],
+    },
+    {
+      "host": "localhost",
+      "username": "vscode",
+      "port": 2223,
+      "args": [
+        "-o",
+        "StrictHostKeyChecking=no",
+        "-o",
+        "UserKnownHostsFile=/dev/null",
+        "-o",
+        "GlobalKnownHostsFile=/dev/null",
+      ],
+      "projects": [
+        {
+          "paths": ["/host_workspace"],
+        },
+      ],
+      "nickname": "mk-zitadel",
+      "port_forwards": [
+        {
+          "local_port": 8090,
+          "remote_port": 8090,
+        },
+        {
+          "local_port": 1455,
+          "remote_port": 1455,
+        },
+      ],
+    },
+    {
+      "nickname": "mk-client",
+      "host": "localhost",
+      "username": "dev",
+      "port": 58521,
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/Users/w/src/medikit/client"],
+        },
+        {
+          "paths": ["/workspace"],
+        },
+      ],
+    },
   ],
   "languages": {
     "SpiceDB": {
       // "formatter": "language_server"
       "code_actions_on_format": {
-        "textDocument/formatting": true
-      }
-    } //,
+        "textDocument/formatting": true,
+      },
+    }, //,
     // "YAML": {
     // it converts " to '
     //   "formatter": "language_server"
@@ -65,36 +118,36 @@
       "settings": {
         "yaml": {
           "format": {
-            "singleQuote": true
+            "singleQuote": true,
           },
           "schemas": {
             "file:///Users/w/src/medikit/zitadel/json-schema/steps.schema.json": [
-              "*zitadel*/**/init-steps.yaml"
+              "*zitadel*/**/init-steps.yaml",
             ],
             "file:///Users/w/src/medikit/zitadel/json-schema/defaults/defaults.schema.json": [
               "*zitadel*/**/config.yaml",
-              "*zitadel*/**/secrets.yaml"
-            ]
-          }
-        }
-      }
-    }
+              "*zitadel*/**/secrets.yaml",
+            ],
+          },
+        },
+      },
+    },
   },
   "agent": {
     "default_profile": "write",
     "always_allow_tool_actions": true,
     "default_model": {
-      "provider": "anthropic",
-      "model": "claude-sonnet-4-5-latest"
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4.5",
     },
     "model_parameters": [],
-    "enable_feedback": false
+    "enable_feedback": false,
   },
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "copilot",
   },
   "edit_predictions": {
-    "mode": "eager"
+    "mode": "eager",
   },
   "inlay_hints": {
     "enabled": true,
@@ -110,13 +163,13 @@
       "alt": false,
       "shift": false,
       "platform": false,
-      "function": false
-    }
+      "function": false,
+    },
   },
   "base_keymap": "VSCode",
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "vim_mode": true,
   "icon_theme": "Zed (Default)",
@@ -125,6 +178,6 @@
   "theme": {
     "mode": "system",
     "light": "Ayu Light",
-    "dark": "Ayu Dark"
-  }
+    "dark": "Ayu Dark",
+  },
 }
