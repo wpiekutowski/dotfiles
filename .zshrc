@@ -110,7 +110,7 @@ else
 fi
 
 if [[ -d "$HOME/Library/Group Containers/2BUA8C4S2C.com.1password" ]]; then
-  export SSH_AUTH_SOCK="$HOME/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+  export SSH_AUTH_SOCK="$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 fi
 
 # difftastic
