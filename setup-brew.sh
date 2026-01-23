@@ -42,6 +42,7 @@ brew install \
   entr \
   font-meslo-for-powerlevel10k \
   gpg \
+  htop \
   iterm2 \
   itermai \
   jq \
