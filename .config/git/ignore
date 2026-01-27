@@ -7,4 +7,5 @@ CLAUDE.local.md
 CLAUDE.md
 .serena
 mise.local.toml
+.agent-container.yaml
 .playwright-mcp
