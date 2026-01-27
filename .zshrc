@@ -74,9 +74,9 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 # Custom:
 # zsh-kubectl-prompt: https://github.com/superbrothers/zsh-kubectl-prompt
-plugins=(aliases colored-man-pages docker direnv genpass git kubectl mise safe-paste zsh-kubectl-prompt)
+plugins=(aliases colored-man-pages docker direnv fzf genpass git kubectl mise safe-paste) # zsh-kubectl-prompt)
 
-RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
+#RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
 
 source $ZSH/oh-my-zsh.sh
 
@@ -140,5 +140,4 @@ if [[ -f "$HOME/.claude/local/claude" ]]; then
   alias claude="~/.claude/local/claude"
 fi
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source /Users/w/.config/op/plugins.sh

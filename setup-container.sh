@@ -20,7 +20,6 @@ WHITELIST=(
     ".config/git"
     ".config/nvim"
     ".config/vim"
-    ".fzf.zsh"
     ".npmrc"
 )
 
