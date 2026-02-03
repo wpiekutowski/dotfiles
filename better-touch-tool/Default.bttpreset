@@ -55,7 +55,7 @@
     "BTTTpFourFingerSwipeSensitivity" : 0.40000000000000002,
     "BSTMoveTreshold" : 2,
     "BTTHideFomControlStripWhenOpen" : false,
-    "BTTNumberOfStarts" : 77,
+    "BTTNumberOfStarts" : 79,
     "BTTForceNormalClickPressure3F" : 150,
     "showSiriRemoteTab" : true,
     "SIRIScrollSpeed" : 1,
@@ -161,55 +161,73 @@
     "BTTNotchBarNotchMenubarModeHideRightScrollable" : true,
     "BSTSnapAreaDefaultPictoDistanceFromLeft" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "AB508D40-CF2D-4D73-9BD3-EA5994420609",
+  "BTTPresetUUID" : "0903FE20-693B-41C4-B42D-7153080184A1",
   "BTTPresetContent" : [
     {
-      "BTTAppBundleIdentifier" : "com.tinyspeck.slackmacgap",
-      "BTTAppName" : "Slack",
+      "BTTAppBundleIdentifier" : "com.apple.Safari",
+      "BTTAppName" : "Safari",
       "BTTAppAutoInvertIcon" : 1,
       "BTTAppProcessMatchMode" : 2,
-      "BTTAppProcessName" : "Slack",
+      "BTTAppProcessName" : "Safari",
       "BTTTriggers" : [
         {
-          "BTTLastUpdatedAt" : 1769167367.964098,
-          "BTTTriggerType" : 160,
-          "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Swipe Right",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTUUID" : "86E795BA-EC1B-4C53-9F4F-65F51E71DC13",
+          "BTTLastUpdatedAt" : 1769167367.964082,
+          "BTTTriggerType" : 1004,
+          "BTTTriggerTypeDescriptionReadOnly" : "Button 4",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTUUID" : "BF277C2E-37BB-4569-A0A3-584450C74D4A",
           "BTTOrder" : 1,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1769167367.9640899,
-              "BTTTriggerParentUUID" : "86E795BA-EC1B-4C53-9F4F-65F51E71DC13",
+              "BTTLastUpdatedAt" : 1769167367.964184,
+              "BTTTriggerParentUUID" : "BF277C2E-37BB-4569-A0A3-584450C74D4A",
               "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-              "BTTUUID" : "709EF121-257F-41CF-8658-FC0D096E9B9E",
-              "BTTLayoutIndependentActionChar" : "[",
-              "BTTShortcutToSend" : "55,33",
-              "BTTOrder" : 6
+              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+              "BTTUUID" : "30F85627-2380-4302-AFDA-E76E06A95D6A",
+              "BTTPredefinedActionType" : 124,
+              "BTTPredefinedActionName" : "Trigger Menu Bar Menu-Item",
+              "BTTMenubarPath" : "History;Forward",
+              "BTTOrder" : 3
             }
           ]
         },
         {
-          "BTTLastUpdatedAt" : 1769167367.964066,
-          "BTTTriggerType" : 159,
-          "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Swipe Left",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTUUID" : "88D4BB4E-6D9D-4960-A351-3CE7CC42223F",
+          "BTTLastUpdatedAt" : 1769167367.9641449,
+          "BTTTriggerType" : 1003,
+          "BTTTriggerTypeDescriptionReadOnly" : "Button 3",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTUUID" : "9C067935-F42B-4985-BA91-B11EF946CBBA",
           "BTTOrder" : 0,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1769167367.9640589,
-              "BTTTriggerParentUUID" : "88D4BB4E-6D9D-4960-A351-3CE7CC42223F",
+              "BTTLastUpdatedAt" : 1769167367.9639258,
+              "BTTTriggerParentUUID" : "9C067935-F42B-4985-BA91-B11EF946CBBA",
               "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-              "BTTUUID" : "90E17CEC-4036-4EFF-B6D4-0C980501AF6D",
-              "BTTLayoutIndependentActionChar" : "]",
-              "BTTShortcutToSend" : "55,30",
-              "BTTOrder" : 7
+              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+              "BTTUUID" : "39CC4917-796C-4167-A2D1-1065C847EACB",
+              "BTTPredefinedActionType" : 124,
+              "BTTPredefinedActionName" : "Trigger Menu Bar Menu-Item",
+              "BTTMenubarPath" : "History;Back",
+              "BTTOrder" : 2
             }
           ]
         }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "BT.L",
+      "BTTAppName" : "Recently Used",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
       ]
     },
     {
@@ -221,192 +239,42 @@
       },
       "BTTTriggers" : [
         {
-          "BTTLastUpdatedAt" : 1769167367.9641061,
+          "BTTLastUpdatedAt" : 1769167367.964102,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "AAECF343-CAE5-457F-9BD1-1C7CA1427AD3",
-          "BTTAdditionalConfiguration" : "524352",
-          "BTTShortcutScope" : 0,
-          "BTTShortcutKeyboardType" : 26733,
-          "BTTTriggerOnDown" : 1,
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "SPACE",
-          "BTTShortcutKeyCode" : 49,
-          "BTTShortcutAdvancedModifierKeys" : "524352",
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 1,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.9640942,
-              "BTTTriggerParentUUID" : "AAECF343-CAE5-457F-9BD1-1C7CA1427AD3",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "645A33B5-48F3-4AFE-8BAD-18C55BD942B2",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 10,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Block right alt+space to avoid hard spaces and triggering ChatGPT",
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.9639759,
-          "BTTTriggerType" : 630,
-          "BTTTriggerTypeDescriptionReadOnly" : "Group",
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "1FCD46B4-65D0-4E92-B51F-A986BC9E8989",
-          "BTTShortcutKeyboardType" : 0,
-          "BTTTriggerOnDown" : 1,
-          "BTTGroupName" : "Workspace",
-          "BTTShortcutKeyCode" : -1,
-          "BTTOrder" : 2,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTAdditionalDataJSON" : {
-            "BTTIconConfigIconHeight" : 25,
-            "BTTIconConfigIconIconWidth" : 25
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.9641318,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "18425875-B378-449D-8917-5FA612C69D24",
-          "BTTAdditionalConfiguration" : "655394",
-          "BTTShortcutScope" : 0,
-          "BTTShortcutKeyboardType" : 26733,
-          "BTTTriggerOnDown" : 1,
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "x",
-          "BTTShortcutKeyCode" : 7,
-          "BTTShortcutAdvancedModifierKeys" : "655394",
-          "BTTShortcutModifierKeys" : 655360,
-          "BTTOrder" : 17,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.964026,
-              "BTTTriggerParentUUID" : "18425875-B378-449D-8917-5FA612C69D24",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "F590F3DE-B4C8-47D8-8FD8-94125D3552BD",
-              "BTTPredefinedActionType" : 137,
-              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move-node-to-workspace X",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 4,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Aerospace: move to workspace",
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1,
-            "BTTHUDText" : "lalt-l"
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.9640012,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "F1ACCD5A-82A8-4AB9-B6C8-6F08EFCC074F",
+          "BTTUUID" : "95690373-6EA6-4646-921C-5F708B27B7FA",
           "BTTAdditionalConfiguration" : "524320",
           "BTTShortcutScope" : 0,
           "BTTShortcutKeyboardType" : 26733,
           "BTTTriggerOnDown" : 1,
           "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "o",
-          "BTTShortcutKeyCode" : 31,
+          "BTTLayoutIndependentChar" : "l",
+          "BTTShortcutKeyCode" : 37,
           "BTTShortcutAdvancedModifierKeys" : "524320",
           "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 12,
+          "BTTOrder" : 21,
           "BTTAutoAdaptToKeyboardLayout" : 0,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1769167367.9639668,
-              "BTTTriggerParentUUID" : "F1ACCD5A-82A8-4AB9-B6C8-6F08EFCC074F",
+              "BTTLastUpdatedAt" : 1769167367.96398,
+              "BTTTriggerParentUUID" : "95690373-6EA6-4646-921C-5F708B27B7FA",
               "BTTIsPureAction" : true,
               "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "5784FD11-BB5E-45AF-8F43-73D15DBFFFD1",
+              "BTTUUID" : "E7A771A6-C400-4429-BEBD-A2B07E03469A",
               "BTTPredefinedActionType" : 137,
               "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace workspace O",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace focus  --boundaries all-monitors-outer-frame --boundaries-action wrap-around-all-monitors right",
               "BTTShortcutKeyboardType" : 0,
               "BTTShortcutKeyCode" : -1,
               "BTTOrder" : 4,
               "BTTAutoAdaptToKeyboardLayout" : 0
             }
           ],
-          "BTTGestureNotes" : "Aerospace: switch workspace",
+          "BTTGestureNotes" : "Aerospace: focus right",
           "BTTTriggerConfig" : {
             "BTTLeftRightModifierDifferentiation" : 1,
             "BTTHUDText" : "lalt-l"
           }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.9641109,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "E570D677-90F6-47B1-9754-AD2337363ABC",
-          "BTTAdditionalConfiguration" : "655394",
-          "BTTShortcutScope" : 0,
-          "BTTShortcutKeyboardType" : 26733,
-          "BTTTriggerOnDown" : 1,
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "a",
-          "BTTShortcutKeyCode" : 0,
-          "BTTShortcutAdvancedModifierKeys" : "655394",
-          "BTTShortcutModifierKeys" : 655360,
-          "BTTOrder" : 5,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.9641151,
-              "BTTTriggerParentUUID" : "E570D677-90F6-47B1-9754-AD2337363ABC",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "35F02A5C-B3F5-4DAC-8176-FCCA581D2F64",
-              "BTTPredefinedActionType" : 137,
-              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move-node-to-workspace A",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 4,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Aerospace: move to workspace",
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1,
-            "BTTHUDText" : "lalt-l"
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.963918,
-          "BTTTriggerType" : 100,
-          "BTTTriggerTypeDescriptionReadOnly" : "3 Finger Swipe Left",
-          "BTTTriggerTypeDescription" : "Aerospace: next workspace",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTUUID" : "832B4E3C-D77F-428A-9DC7-277105F582BC",
-          "BTTOrder" : 1,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.964154,
-              "BTTTriggerParentUUID" : "832B4E3C-D77F-428A-9DC7-277105F582BC",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-              "BTTUUID" : "C3525051-AB7C-46D2-BC6A-4A201819618F",
-              "BTTPredefinedActionType" : 137,
-              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace list-workspaces --monitor all --empty no | /opt/homebrew/bin/aerospace workspace next --wrap-around --stdin\n\n",
-              "BTTOrder" : 1
-            }
-          ],
-          "BTTGestureNotes" : "Aerospace: next workspace"
         },
         {
           "BTTLastUpdatedAt" : 1769167367.9639878,
@@ -441,349 +309,6 @@
             }
           ],
           "BTTGestureNotes" : "Aerospace: switch workspace",
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1,
-            "BTTHUDText" : "lalt-l"
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.9640131,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "72EDD443-649C-4571-B5CD-B03D8D241946",
-          "BTTAdditionalConfiguration" : "524320",
-          "BTTShortcutScope" : 0,
-          "BTTShortcutKeyboardType" : 26733,
-          "BTTTriggerOnDown" : 1,
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "x",
-          "BTTShortcutKeyCode" : 7,
-          "BTTShortcutAdvancedModifierKeys" : "524320",
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 16,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.9641271,
-              "BTTTriggerParentUUID" : "72EDD443-649C-4571-B5CD-B03D8D241946",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "4EC8EA0A-0C90-43E7-80CE-894F6B1D5F54",
-              "BTTPredefinedActionType" : 137,
-              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace workspace X",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 4,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Aerospace: switch workspace",
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1,
-            "BTTHUDText" : "lalt-l"
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.963963,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "D99E55F1-81BF-41BE-A4B1-C13B8748418D",
-          "BTTAdditionalConfiguration" : "524320",
-          "BTTShortcutScope" : 0,
-          "BTTShortcutKeyboardType" : 26733,
-          "BTTTriggerOnDown" : 1,
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "c",
-          "BTTShortcutKeyCode" : 8,
-          "BTTShortcutAdvancedModifierKeys" : "524320",
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 6,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.9640779,
-              "BTTTriggerParentUUID" : "D99E55F1-81BF-41BE-A4B1-C13B8748418D",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "F8891AFD-3678-4732-9C34-997F614A65D1",
-              "BTTPredefinedActionType" : 137,
-              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace workspace C",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 4,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Aerospace: switch workspace",
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1,
-            "BTTHUDText" : "lalt-l"
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.963938,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "A5DF7EEB-114F-429C-8E54-DED474ECFF7B",
-          "BTTAdditionalConfiguration" : "524320",
-          "BTTShortcutScope" : 0,
-          "BTTShortcutKeyboardType" : 26733,
-          "BTTTriggerOnDown" : 1,
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "n",
-          "BTTShortcutKeyCode" : 45,
-          "BTTShortcutAdvancedModifierKeys" : "524320",
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 10,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.9640222,
-              "BTTTriggerParentUUID" : "A5DF7EEB-114F-429C-8E54-DED474ECFF7B",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "9DC2F81C-0597-477A-9A65-7CB422EADFBC",
-              "BTTPredefinedActionType" : 137,
-              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace workspace N",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 4,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Aerospace: switch workspace",
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1,
-            "BTTHUDText" : "lalt-l"
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769597953.790504,
-          "BTTTriggerType" : 1000,
-          "BTTTriggerTypeDescriptionReadOnly" : "Leftclick (needs modifier key) (Over Menubar)",
-          "BTTTriggerTypeDescription" : "Attempt to fix Aerospace problem with using menus of an app on the secondary monitor. See comments in actions.",
-          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-          "BTTUUID" : "79CE1CA3-5182-4535-A223-C4B6646ED3A8",
-          "BTTTriggerOnDown" : 0,
-          "BTTRequiredModifierKeys" : 131072,
-          "BTTOrder" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.964165,
-              "BTTTriggerParentUUID" : "79CE1CA3-5182-4535-A223-C4B6646ED3A8",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-              "BTTUUID" : "9482F287-9834-42C4-9B05-1D1E2A624430",
-              "BTTPredefinedActionType" : 4,
-              "BTTPredefinedActionName" : "Right Click (At Current Mouse Position)",
-              "BTTOrder" : 2
-            },
-            {
-              "BTTLastUpdatedAt" : 1769598120.8568702,
-              "BTTTriggerParentUUID" : "79CE1CA3-5182-4535-A223-C4B6646ED3A8",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-              "BTTUUID" : "4CDFCD24-D53C-4DFC-9279-AFB20932690F",
-              "BTTPredefinedActionType" : 490,
-              "BTTPredefinedActionName" : "Comment (Does Nothing Else)",
-              "BTTGenericActionConfig" : "Unfortunately after menu item click with this trigger, focus goes to an app on the main monitor. \n\nAlways right-clicking or using ctrl+f2 and keyboard keeps forcus properly.\n\nThis breaks control center, batterym wifi, and focus icons in menu bar, so I switched this to shift+left-click. This somehow also keeps focus.",
-              "BTTOrder" : 11
-            }
-          ],
-          "BTTGestureNotes" : "Attempt to fix Aerospace problem with using menus of an app on the secondary monitor. See comments in actions.",
-          "BTTTriggerConfig" : {
-            "BTTTriggerRestrictions" : "2",
-            "BTTHUDText" : "Left click on menubar"
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.96403,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "960AC258-98C6-4FC6-A130-F014083B8D84",
-          "BTTAdditionalConfiguration" : "524320",
-          "BTTShortcutScope" : 0,
-          "BTTShortcutKeyboardType" : 26733,
-          "BTTTriggerOnDown" : 1,
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "z",
-          "BTTShortcutKeyCode" : 6,
-          "BTTShortcutAdvancedModifierKeys" : "524320",
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 18,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.963913,
-              "BTTTriggerParentUUID" : "960AC258-98C6-4FC6-A130-F014083B8D84",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "CE33918F-DA0A-412C-BB0E-F720A910C16B",
-              "BTTPredefinedActionType" : 137,
-              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace workspace Z",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 4,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Aerospace: switch workspace",
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1,
-            "BTTHUDText" : "lalt-l"
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.9639959,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "30D0942E-308D-479F-A974-577C86CB8022",
-          "BTTAdditionalConfiguration" : "655394",
-          "BTTShortcutScope" : 0,
-          "BTTShortcutKeyboardType" : 26733,
-          "BTTTriggerOnDown" : 1,
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "c",
-          "BTTShortcutKeyCode" : 8,
-          "BTTShortcutAdvancedModifierKeys" : "655394",
-          "BTTShortcutModifierKeys" : 655360,
-          "BTTOrder" : 7,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.9640501,
-              "BTTTriggerParentUUID" : "30D0942E-308D-479F-A974-577C86CB8022",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "414BD92E-4F86-42C2-A601-AB37CAD940F8",
-              "BTTPredefinedActionType" : 137,
-              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move-node-to-workspace C",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 4,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Aerospace: move to workspace",
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1,
-            "BTTHUDText" : "lalt-l"
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.963959,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "5166AF18-38CD-484E-BDD6-F9B2EE977495",
-          "BTTAdditionalConfiguration" : "655394",
-          "BTTShortcutScope" : 0,
-          "BTTShortcutKeyboardType" : 26733,
-          "BTTTriggerOnDown" : 1,
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "e",
-          "BTTShortcutKeyCode" : 14,
-          "BTTShortcutAdvancedModifierKeys" : "655394",
-          "BTTShortcutModifierKeys" : 655360,
-          "BTTOrder" : 9,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.9639421,
-              "BTTTriggerParentUUID" : "5166AF18-38CD-484E-BDD6-F9B2EE977495",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "1055F028-9429-40D2-ABBB-86D8EBD07F16",
-              "BTTPredefinedActionType" : 137,
-              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move-node-to-workspace E",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 4,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Aerospace: move to workspace",
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1,
-            "BTTHUDText" : "lalt-l"
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.9639502,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "91884DF3-893E-4B70-9356-219A7F879D08",
-          "BTTAdditionalConfiguration" : "524320",
-          "BTTShortcutScope" : 0,
-          "BTTShortcutKeyboardType" : 26733,
-          "BTTTriggerOnDown" : 1,
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "a",
-          "BTTShortcutKeyCode" : 0,
-          "BTTShortcutAdvancedModifierKeys" : "524320",
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 4,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.9641609,
-              "BTTTriggerParentUUID" : "91884DF3-893E-4B70-9356-219A7F879D08",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "F2A77087-3309-4A32-AB75-630F85C3AD13",
-              "BTTPredefinedActionType" : 137,
-              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace workspace A",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 4,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Aerospace: switch workspace",
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1,
-            "BTTHUDText" : "lalt-l"
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.9640369,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "8880E267-95D5-442E-9595-3623E4893ACB",
-          "BTTAdditionalConfiguration" : "655394",
-          "BTTShortcutScope" : 0,
-          "BTTShortcutKeyboardType" : 26733,
-          "BTTTriggerOnDown" : 1,
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "z",
-          "BTTShortcutKeyCode" : 6,
-          "BTTShortcutAdvancedModifierKeys" : "655394",
-          "BTTShortcutModifierKeys" : 655360,
-          "BTTOrder" : 19,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.96418,
-              "BTTTriggerParentUUID" : "8880E267-95D5-442E-9595-3623E4893ACB",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "C05D7B0E-5281-4355-8104-DE07854E64CE",
-              "BTTPredefinedActionType" : 137,
-              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move-node-to-workspace Z",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 4,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Aerospace: move to workspace",
           "BTTTriggerConfig" : {
             "BTTLeftRightModifierDifferentiation" : 1,
             "BTTHUDText" : "lalt-l"
@@ -827,44 +352,6 @@
           }
         },
         {
-          "BTTLastUpdatedAt" : 1769167367.9641409,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "B598B7FB-764D-4822-8143-D1FA839F7FF9",
-          "BTTAdditionalConfiguration" : "655394",
-          "BTTShortcutScope" : 0,
-          "BTTShortcutKeyboardType" : 26733,
-          "BTTTriggerOnDown" : 1,
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "l",
-          "BTTShortcutKeyCode" : 37,
-          "BTTShortcutAdvancedModifierKeys" : "655394",
-          "BTTShortcutModifierKeys" : 655360,
-          "BTTOrder" : 22,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.964005,
-              "BTTTriggerParentUUID" : "B598B7FB-764D-4822-8143-D1FA839F7FF9",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "889236DF-E291-4667-A09E-9ED304A74117",
-              "BTTPredefinedActionType" : 137,
-              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move right",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 4,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Aerospace: move right",
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1,
-            "BTTHUDText" : "lalt-l"
-          }
-        },
-        {
           "BTTLastUpdatedAt" : 1769167367.9640169,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
@@ -903,124 +390,31 @@
           }
         },
         {
-          "BTTLastUpdatedAt" : 1769167367.9640741,
-          "BTTTriggerType" : 630,
-          "BTTTriggerTypeDescriptionReadOnly" : "Group",
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "63EA0435-B1FD-4A1C-B89A-981777D996C8",
-          "BTTShortcutKeyboardType" : 0,
-          "BTTTriggerOnDown" : 1,
-          "BTTGroupName" : "Focus/move",
-          "BTTShortcutKeyCode" : -1,
-          "BTTOrder" : 20,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTAdditionalDataJSON" : {
-            "BTTIconConfigIconHeight" : 25,
-            "BTTIconConfigIconIconWidth" : 25
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.9640419,
+          "BTTLastUpdatedAt" : 1769167367.9641318,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "5352B1B3-DB19-4641-A1E3-66B88AA2C675",
+          "BTTUUID" : "18425875-B378-449D-8917-5FA612C69D24",
           "BTTAdditionalConfiguration" : "655394",
           "BTTShortcutScope" : 0,
           "BTTShortcutKeyboardType" : 26733,
           "BTTTriggerOnDown" : 1,
           "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "o",
-          "BTTShortcutKeyCode" : 31,
+          "BTTLayoutIndependentChar" : "x",
+          "BTTShortcutKeyCode" : 7,
           "BTTShortcutAdvancedModifierKeys" : "655394",
           "BTTShortcutModifierKeys" : 655360,
-          "BTTOrder" : 13,
+          "BTTOrder" : 17,
           "BTTAutoAdaptToKeyboardLayout" : 0,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1769167367.9639339,
-              "BTTTriggerParentUUID" : "5352B1B3-DB19-4641-A1E3-66B88AA2C675",
+              "BTTLastUpdatedAt" : 1769167367.964026,
+              "BTTTriggerParentUUID" : "18425875-B378-449D-8917-5FA612C69D24",
               "BTTIsPureAction" : true,
               "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "626818D1-6E69-438C-BD58-7734DCB2D7DF",
+              "BTTUUID" : "F590F3DE-B4C8-47D8-8FD8-94125D3552BD",
               "BTTPredefinedActionType" : 137,
               "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move-node-to-workspace O",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 4,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Aerospace: move to workspace",
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1,
-            "BTTHUDText" : "lalt-l"
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.964119,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "6014B985-1399-4364-B58E-3F3DDA49625A",
-          "BTTAdditionalConfiguration" : "524320",
-          "BTTShortcutScope" : 0,
-          "BTTShortcutKeyboardType" : 26733,
-          "BTTTriggerOnDown" : 1,
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "e",
-          "BTTShortcutKeyCode" : 14,
-          "BTTShortcutAdvancedModifierKeys" : "524320",
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 8,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.964087,
-              "BTTTriggerParentUUID" : "6014B985-1399-4364-B58E-3F3DDA49625A",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "2D7483F0-E4EE-4D6A-A8F9-F3E856F89F4F",
-              "BTTPredefinedActionType" : 137,
-              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace workspace E",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 4,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Aerospace: switch workspace",
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1,
-            "BTTHUDText" : "lalt-l"
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1769167367.9640551,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "83C3FE53-0A39-42E1-AC12-221C242BA6A7",
-          "BTTAdditionalConfiguration" : "655394",
-          "BTTShortcutScope" : 0,
-          "BTTShortcutKeyboardType" : 26733,
-          "BTTTriggerOnDown" : 1,
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "n",
-          "BTTShortcutKeyCode" : 45,
-          "BTTShortcutAdvancedModifierKeys" : "655394",
-          "BTTShortcutModifierKeys" : 655360,
-          "BTTOrder" : 11,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.964062,
-              "BTTTriggerParentUUID" : "83C3FE53-0A39-42E1-AC12-221C242BA6A7",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "6C3B2D90-7BB3-47B9-9336-F7136C5CF648",
-              "BTTPredefinedActionType" : 137,
-              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move-node-to-workspace N",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move-node-to-workspace X",
               "BTTShortcutKeyboardType" : 0,
               "BTTShortcutKeyCode" : -1,
               "BTTOrder" : 4,
@@ -1087,6 +481,592 @@
           }
         },
         {
+          "BTTLastUpdatedAt" : 1769167367.9641109,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "E570D677-90F6-47B1-9754-AD2337363ABC",
+          "BTTAdditionalConfiguration" : "655394",
+          "BTTShortcutScope" : 0,
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTLayoutIndependentChar" : "a",
+          "BTTShortcutKeyCode" : 0,
+          "BTTShortcutAdvancedModifierKeys" : "655394",
+          "BTTShortcutModifierKeys" : 655360,
+          "BTTOrder" : 5,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.9641151,
+              "BTTTriggerParentUUID" : "E570D677-90F6-47B1-9754-AD2337363ABC",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "35F02A5C-B3F5-4DAC-8176-FCCA581D2F64",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move-node-to-workspace A",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 4,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ],
+          "BTTGestureNotes" : "Aerospace: move to workspace",
+          "BTTTriggerConfig" : {
+            "BTTLeftRightModifierDifferentiation" : 1,
+            "BTTHUDText" : "lalt-l"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.963938,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "A5DF7EEB-114F-429C-8E54-DED474ECFF7B",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTShortcutScope" : 0,
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTLayoutIndependentChar" : "n",
+          "BTTShortcutKeyCode" : 45,
+          "BTTShortcutAdvancedModifierKeys" : "524320",
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 10,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.9640222,
+              "BTTTriggerParentUUID" : "A5DF7EEB-114F-429C-8E54-DED474ECFF7B",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "9DC2F81C-0597-477A-9A65-7CB422EADFBC",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace workspace N",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 4,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ],
+          "BTTGestureNotes" : "Aerospace: switch workspace",
+          "BTTTriggerConfig" : {
+            "BTTLeftRightModifierDifferentiation" : 1,
+            "BTTHUDText" : "lalt-l"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.9640419,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "5352B1B3-DB19-4641-A1E3-66B88AA2C675",
+          "BTTAdditionalConfiguration" : "655394",
+          "BTTShortcutScope" : 0,
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTLayoutIndependentChar" : "o",
+          "BTTShortcutKeyCode" : 31,
+          "BTTShortcutAdvancedModifierKeys" : "655394",
+          "BTTShortcutModifierKeys" : 655360,
+          "BTTOrder" : 13,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.9639339,
+              "BTTTriggerParentUUID" : "5352B1B3-DB19-4641-A1E3-66B88AA2C675",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "626818D1-6E69-438C-BD58-7734DCB2D7DF",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move-node-to-workspace O",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 4,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ],
+          "BTTGestureNotes" : "Aerospace: move to workspace",
+          "BTTTriggerConfig" : {
+            "BTTLeftRightModifierDifferentiation" : 1,
+            "BTTHUDText" : "lalt-l"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.9641061,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "AAECF343-CAE5-457F-9BD1-1C7CA1427AD3",
+          "BTTAdditionalConfiguration" : "524352",
+          "BTTShortcutScope" : 0,
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTLayoutIndependentChar" : "SPACE",
+          "BTTShortcutKeyCode" : 49,
+          "BTTShortcutAdvancedModifierKeys" : "524352",
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 1,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.9640942,
+              "BTTTriggerParentUUID" : "AAECF343-CAE5-457F-9BD1-1C7CA1427AD3",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "645A33B5-48F3-4AFE-8BAD-18C55BD942B2",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 10,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ],
+          "BTTGestureNotes" : "Block right alt+space to avoid hard spaces and triggering ChatGPT",
+          "BTTTriggerConfig" : {
+            "BTTLeftRightModifierDifferentiation" : 1
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.96403,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "960AC258-98C6-4FC6-A130-F014083B8D84",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTShortcutScope" : 0,
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTLayoutIndependentChar" : "z",
+          "BTTShortcutKeyCode" : 6,
+          "BTTShortcutAdvancedModifierKeys" : "524320",
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 18,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.963913,
+              "BTTTriggerParentUUID" : "960AC258-98C6-4FC6-A130-F014083B8D84",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "CE33918F-DA0A-412C-BB0E-F720A910C16B",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace workspace Z",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 4,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ],
+          "BTTGestureNotes" : "Aerospace: switch workspace",
+          "BTTTriggerConfig" : {
+            "BTTLeftRightModifierDifferentiation" : 1,
+            "BTTHUDText" : "lalt-l"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.9640551,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "83C3FE53-0A39-42E1-AC12-221C242BA6A7",
+          "BTTAdditionalConfiguration" : "655394",
+          "BTTShortcutScope" : 0,
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTLayoutIndependentChar" : "n",
+          "BTTShortcutKeyCode" : 45,
+          "BTTShortcutAdvancedModifierKeys" : "655394",
+          "BTTShortcutModifierKeys" : 655360,
+          "BTTOrder" : 11,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.964062,
+              "BTTTriggerParentUUID" : "83C3FE53-0A39-42E1-AC12-221C242BA6A7",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "6C3B2D90-7BB3-47B9-9336-F7136C5CF648",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move-node-to-workspace N",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 4,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ],
+          "BTTGestureNotes" : "Aerospace: move to workspace",
+          "BTTTriggerConfig" : {
+            "BTTLeftRightModifierDifferentiation" : 1,
+            "BTTHUDText" : "lalt-l"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.9640012,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "F1ACCD5A-82A8-4AB9-B6C8-6F08EFCC074F",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTShortcutScope" : 0,
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTLayoutIndependentChar" : "o",
+          "BTTShortcutKeyCode" : 31,
+          "BTTShortcutAdvancedModifierKeys" : "524320",
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 12,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.9639668,
+              "BTTTriggerParentUUID" : "F1ACCD5A-82A8-4AB9-B6C8-6F08EFCC074F",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "5784FD11-BB5E-45AF-8F43-73D15DBFFFD1",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace workspace O",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 4,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ],
+          "BTTGestureNotes" : "Aerospace: switch workspace",
+          "BTTTriggerConfig" : {
+            "BTTLeftRightModifierDifferentiation" : 1,
+            "BTTHUDText" : "lalt-l"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.963918,
+          "BTTTriggerType" : 100,
+          "BTTTriggerTypeDescriptionReadOnly" : "3 Finger Swipe Left",
+          "BTTTriggerTypeDescription" : "Aerospace: next workspace",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "832B4E3C-D77F-428A-9DC7-277105F582BC",
+          "BTTOrder" : 1,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.964154,
+              "BTTTriggerParentUUID" : "832B4E3C-D77F-428A-9DC7-277105F582BC",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+              "BTTUUID" : "C3525051-AB7C-46D2-BC6A-4A201819618F",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace list-workspaces --monitor all --empty no | /opt/homebrew/bin/aerospace workspace next --wrap-around --stdin\n\n",
+              "BTTOrder" : 1
+            }
+          ],
+          "BTTGestureNotes" : "Aerospace: next workspace"
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.9639502,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "91884DF3-893E-4B70-9356-219A7F879D08",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTShortcutScope" : 0,
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTLayoutIndependentChar" : "a",
+          "BTTShortcutKeyCode" : 0,
+          "BTTShortcutAdvancedModifierKeys" : "524320",
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 4,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.9641609,
+              "BTTTriggerParentUUID" : "91884DF3-893E-4B70-9356-219A7F879D08",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "F2A77087-3309-4A32-AB75-630F85C3AD13",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace workspace A",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 4,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ],
+          "BTTGestureNotes" : "Aerospace: switch workspace",
+          "BTTTriggerConfig" : {
+            "BTTLeftRightModifierDifferentiation" : 1,
+            "BTTHUDText" : "lalt-l"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.9640741,
+          "BTTTriggerType" : 630,
+          "BTTTriggerTypeDescriptionReadOnly" : "Group",
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "63EA0435-B1FD-4A1C-B89A-981777D996C8",
+          "BTTShortcutKeyboardType" : 0,
+          "BTTTriggerOnDown" : 1,
+          "BTTGroupName" : "Focus/move",
+          "BTTShortcutKeyCode" : -1,
+          "BTTOrder" : 20,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTAdditionalDataJSON" : {
+            "BTTIconConfigIconHeight" : 25,
+            "BTTIconConfigIconIconWidth" : 25
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.9640369,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "8880E267-95D5-442E-9595-3623E4893ACB",
+          "BTTAdditionalConfiguration" : "655394",
+          "BTTShortcutScope" : 0,
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTLayoutIndependentChar" : "z",
+          "BTTShortcutKeyCode" : 6,
+          "BTTShortcutAdvancedModifierKeys" : "655394",
+          "BTTShortcutModifierKeys" : 655360,
+          "BTTOrder" : 19,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.96418,
+              "BTTTriggerParentUUID" : "8880E267-95D5-442E-9595-3623E4893ACB",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "C05D7B0E-5281-4355-8104-DE07854E64CE",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move-node-to-workspace Z",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 4,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ],
+          "BTTGestureNotes" : "Aerospace: move to workspace",
+          "BTTTriggerConfig" : {
+            "BTTLeftRightModifierDifferentiation" : 1,
+            "BTTHUDText" : "lalt-l"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769597953.790504,
+          "BTTTriggerType" : 1000,
+          "BTTTriggerTypeDescriptionReadOnly" : "Leftclick (needs modifier key) (Over Menubar)",
+          "BTTTriggerTypeDescription" : "Attempt to fix Aerospace problem with using menus of an app on the secondary monitor. See comments in actions.",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTUUID" : "79CE1CA3-5182-4535-A223-C4B6646ED3A8",
+          "BTTTriggerOnDown" : 0,
+          "BTTRequiredModifierKeys" : 131072,
+          "BTTOrder" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.964165,
+              "BTTTriggerParentUUID" : "79CE1CA3-5182-4535-A223-C4B6646ED3A8",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+              "BTTUUID" : "9482F287-9834-42C4-9B05-1D1E2A624430",
+              "BTTPredefinedActionType" : 4,
+              "BTTPredefinedActionName" : "Right Click (At Current Mouse Position)",
+              "BTTOrder" : 2
+            },
+            {
+              "BTTLastUpdatedAt" : 1769598120.8568702,
+              "BTTTriggerParentUUID" : "79CE1CA3-5182-4535-A223-C4B6646ED3A8",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+              "BTTUUID" : "4CDFCD24-D53C-4DFC-9279-AFB20932690F",
+              "BTTPredefinedActionType" : 490,
+              "BTTPredefinedActionName" : "Comment (Does Nothing Else)",
+              "BTTGenericActionConfig" : "Unfortunately after menu item click with this trigger, focus goes to an app on the main monitor. \n\nAlways right-clicking or using ctrl+f2 and keyboard keeps forcus properly.\n\nThis breaks control center, batterym wifi, and focus icons in menu bar, so I switched this to shift+left-click. This somehow also keeps focus.",
+              "BTTOrder" : 11
+            }
+          ],
+          "BTTGestureNotes" : "Attempt to fix Aerospace problem with using menus of an app on the secondary monitor. See comments in actions.",
+          "BTTTriggerConfig" : {
+            "BTTTriggerRestrictions" : "2",
+            "BTTHUDText" : "Left click on menubar"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.9639759,
+          "BTTTriggerType" : 630,
+          "BTTTriggerTypeDescriptionReadOnly" : "Group",
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "1FCD46B4-65D0-4E92-B51F-A986BC9E8989",
+          "BTTShortcutKeyboardType" : 0,
+          "BTTTriggerOnDown" : 1,
+          "BTTGroupName" : "Workspace",
+          "BTTShortcutKeyCode" : -1,
+          "BTTOrder" : 2,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTAdditionalDataJSON" : {
+            "BTTIconConfigIconHeight" : 25,
+            "BTTIconConfigIconIconWidth" : 25
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.963959,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "5166AF18-38CD-484E-BDD6-F9B2EE977495",
+          "BTTAdditionalConfiguration" : "655394",
+          "BTTShortcutScope" : 0,
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTLayoutIndependentChar" : "e",
+          "BTTShortcutKeyCode" : 14,
+          "BTTShortcutAdvancedModifierKeys" : "655394",
+          "BTTShortcutModifierKeys" : 655360,
+          "BTTOrder" : 9,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.9639421,
+              "BTTTriggerParentUUID" : "5166AF18-38CD-484E-BDD6-F9B2EE977495",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "1055F028-9429-40D2-ABBB-86D8EBD07F16",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move-node-to-workspace E",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 4,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ],
+          "BTTGestureNotes" : "Aerospace: move to workspace",
+          "BTTTriggerConfig" : {
+            "BTTLeftRightModifierDifferentiation" : 1,
+            "BTTHUDText" : "lalt-l"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.9641409,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "B598B7FB-764D-4822-8143-D1FA839F7FF9",
+          "BTTAdditionalConfiguration" : "655394",
+          "BTTShortcutScope" : 0,
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTLayoutIndependentChar" : "l",
+          "BTTShortcutKeyCode" : 37,
+          "BTTShortcutAdvancedModifierKeys" : "655394",
+          "BTTShortcutModifierKeys" : 655360,
+          "BTTOrder" : 22,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.964005,
+              "BTTTriggerParentUUID" : "B598B7FB-764D-4822-8143-D1FA839F7FF9",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "889236DF-E291-4667-A09E-9ED304A74117",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move right",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 4,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ],
+          "BTTGestureNotes" : "Aerospace: move right",
+          "BTTTriggerConfig" : {
+            "BTTLeftRightModifierDifferentiation" : 1,
+            "BTTHUDText" : "lalt-l"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.9639959,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "30D0942E-308D-479F-A974-577C86CB8022",
+          "BTTAdditionalConfiguration" : "655394",
+          "BTTShortcutScope" : 0,
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTLayoutIndependentChar" : "c",
+          "BTTShortcutKeyCode" : 8,
+          "BTTShortcutAdvancedModifierKeys" : "655394",
+          "BTTShortcutModifierKeys" : 655360,
+          "BTTOrder" : 7,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.9640501,
+              "BTTTriggerParentUUID" : "30D0942E-308D-479F-A974-577C86CB8022",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "414BD92E-4F86-42C2-A601-AB37CAD940F8",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace move-node-to-workspace C",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 4,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ],
+          "BTTGestureNotes" : "Aerospace: move to workspace",
+          "BTTTriggerConfig" : {
+            "BTTLeftRightModifierDifferentiation" : 1,
+            "BTTHUDText" : "lalt-l"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.963963,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "D99E55F1-81BF-41BE-A4B1-C13B8748418D",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTShortcutScope" : 0,
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTLayoutIndependentChar" : "c",
+          "BTTShortcutKeyCode" : 8,
+          "BTTShortcutAdvancedModifierKeys" : "524320",
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 6,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.9640779,
+              "BTTTriggerParentUUID" : "D99E55F1-81BF-41BE-A4B1-C13B8748418D",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "F8891AFD-3678-4732-9C34-997F614A65D1",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace workspace C",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 4,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ],
+          "BTTGestureNotes" : "Aerospace: switch workspace",
+          "BTTTriggerConfig" : {
+            "BTTLeftRightModifierDifferentiation" : 1,
+            "BTTHUDText" : "lalt-l"
+          }
+        },
+        {
           "BTTLastUpdatedAt" : 1769167367.9639721,
           "BTTTriggerType" : 101,
           "BTTTriggerTypeDescriptionReadOnly" : "3 Finger Swipe Right",
@@ -1110,109 +1090,80 @@
           "BTTGestureNotes" : "Aerospace: prev workspace"
         },
         {
-          "BTTLastUpdatedAt" : 1769167367.964102,
+          "BTTLastUpdatedAt" : 1769167367.9640131,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "95690373-6EA6-4646-921C-5F708B27B7FA",
+          "BTTUUID" : "72EDD443-649C-4571-B5CD-B03D8D241946",
           "BTTAdditionalConfiguration" : "524320",
           "BTTShortcutScope" : 0,
           "BTTShortcutKeyboardType" : 26733,
           "BTTTriggerOnDown" : 1,
           "BTTNotesInsteadOfDescription" : 1,
-          "BTTLayoutIndependentChar" : "l",
-          "BTTShortcutKeyCode" : 37,
+          "BTTLayoutIndependentChar" : "x",
+          "BTTShortcutKeyCode" : 7,
           "BTTShortcutAdvancedModifierKeys" : "524320",
           "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 21,
+          "BTTOrder" : 16,
           "BTTAutoAdaptToKeyboardLayout" : 0,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1769167367.96398,
-              "BTTTriggerParentUUID" : "95690373-6EA6-4646-921C-5F708B27B7FA",
+              "BTTLastUpdatedAt" : 1769167367.9641271,
+              "BTTTriggerParentUUID" : "72EDD443-649C-4571-B5CD-B03D8D241946",
               "BTTIsPureAction" : true,
               "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "E7A771A6-C400-4429-BEBD-A2B07E03469A",
+              "BTTUUID" : "4EC8EA0A-0C90-43E7-80CE-894F6B1D5F54",
               "BTTPredefinedActionType" : 137,
               "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
-              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace focus  --boundaries all-monitors-outer-frame --boundaries-action wrap-around-all-monitors right",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace workspace X",
               "BTTShortcutKeyboardType" : 0,
               "BTTShortcutKeyCode" : -1,
               "BTTOrder" : 4,
               "BTTAutoAdaptToKeyboardLayout" : 0
             }
           ],
-          "BTTGestureNotes" : "Aerospace: focus right",
+          "BTTGestureNotes" : "Aerospace: switch workspace",
           "BTTTriggerConfig" : {
             "BTTLeftRightModifierDifferentiation" : 1,
             "BTTHUDText" : "lalt-l"
           }
-        }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "BT.L",
-      "BTTAppName" : "Recently Used",
-      "BTTAppAutoInvertIcon" : 1,
-      "BTTTriggers" : [
-
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "com.apple.finder",
-      "BTTAppName" : "Finder",
-      "BTTAppAutoInvertIcon" : 1,
-      "BTTTriggers" : [
-
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "com.apple.Safari",
-      "BTTAppName" : "Safari",
-      "BTTAppAutoInvertIcon" : 1,
-      "BTTAppProcessMatchMode" : 2,
-      "BTTAppProcessName" : "Safari",
-      "BTTTriggers" : [
-        {
-          "BTTLastUpdatedAt" : 1769167367.964082,
-          "BTTTriggerType" : 1004,
-          "BTTTriggerTypeDescriptionReadOnly" : "Button 4",
-          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-          "BTTUUID" : "BF277C2E-37BB-4569-A0A3-584450C74D4A",
-          "BTTOrder" : 1,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1769167367.964184,
-              "BTTTriggerParentUUID" : "BF277C2E-37BB-4569-A0A3-584450C74D4A",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-              "BTTUUID" : "30F85627-2380-4302-AFDA-E76E06A95D6A",
-              "BTTPredefinedActionType" : 124,
-              "BTTPredefinedActionName" : "Trigger Menu Bar Menu-Item",
-              "BTTMenubarPath" : "History;Forward",
-              "BTTOrder" : 3
-            }
-          ]
         },
         {
-          "BTTLastUpdatedAt" : 1769167367.9641449,
-          "BTTTriggerType" : 1003,
-          "BTTTriggerTypeDescriptionReadOnly" : "Button 3",
-          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-          "BTTUUID" : "9C067935-F42B-4985-BA91-B11EF946CBBA",
-          "BTTOrder" : 0,
+          "BTTLastUpdatedAt" : 1769167367.964119,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "6014B985-1399-4364-B58E-3F3DDA49625A",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTShortcutScope" : 0,
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTLayoutIndependentChar" : "e",
+          "BTTShortcutKeyCode" : 14,
+          "BTTShortcutAdvancedModifierKeys" : "524320",
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 8,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1769167367.9639258,
-              "BTTTriggerParentUUID" : "9C067935-F42B-4985-BA91-B11EF946CBBA",
+              "BTTLastUpdatedAt" : 1769167367.964087,
+              "BTTTriggerParentUUID" : "6014B985-1399-4364-B58E-3F3DDA49625A",
               "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-              "BTTUUID" : "39CC4917-796C-4167-A2D1-1065C847EACB",
-              "BTTPredefinedActionType" : 124,
-              "BTTPredefinedActionName" : "Trigger Menu Bar Menu-Item",
-              "BTTMenubarPath" : "History;Back",
-              "BTTOrder" : 2
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "2D7483F0-E4EE-4D6A-A8F9-F3E856F89F4F",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/aerospace workspace E",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 4,
+              "BTTAutoAdaptToKeyboardLayout" : 0
             }
-          ]
+          ],
+          "BTTGestureNotes" : "Aerospace: switch workspace",
+          "BTTTriggerConfig" : {
+            "BTTLeftRightModifierDifferentiation" : 1,
+            "BTTHUDText" : "lalt-l"
+          }
         }
       ]
     },
@@ -1224,42 +1175,42 @@
       "BTTAppProcessName" : "Zed Preview",
       "BTTTriggers" : [
         {
-          "BTTLastUpdatedAt" : 1769167367.963954,
-          "BTTTriggerType" : 159,
-          "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Swipe Left",
-          "BTTTriggerTypeDescription" : "Triggers scrolling so not very useful",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTUUID" : "AE4F65CA-E5B7-4193-98DD-E24941B22EB4",
-          "BTTEnabled2" : 0,
-          "BTTOrder" : 0,
+          "BTTLastUpdatedAt" : 1770115868.6960359,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "A9CAAAB6-014E-4BCA-9995-35A0A00E8DC3",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "0",
+          "BTTShortcutKeyCode" : 29,
+          "BTTShortcutAdvancedModifierKeys" : "1048584",
+          "BTTShortcutModifierKeys" : 1048576,
+          "BTTOrder" : 9,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1769167367.9639921,
-              "BTTTriggerParentUUID" : "AE4F65CA-E5B7-4193-98DD-E24941B22EB4",
+              "BTTLastUpdatedAt" : 1770115958.4054608,
+              "BTTTriggerParentUUID" : "A9CAAAB6-014E-4BCA-9995-35A0A00E8DC3",
               "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-              "BTTUUID" : "9A933AEF-A83E-4DF4-B143-0ACF6AFDDE36",
-              "BTTPredefinedActionType" : 124,
-              "BTTPredefinedActionName" : "Trigger Menu Bar Menu-Item",
-              "BTTMenubarPath" : "Go;Forward",
-              "BTTOrder" : 2
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "80695EF3-8422-4A79-B7D7-85D9709D533D",
+              "BTTLayoutIndependentActionChar" : "0",
+              "BTTShortcutToSend" : "59,29",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 12,
+              "BTTAutoAdaptToKeyboardLayout" : 0
             }
-          ],
-          "BTTGestureNotes" : "Triggers scrolling so not very useful",
-          "BTTTriggerConfig" : {
-            "BTTNoTouchTimeout" : 0,
-            "BTTHUDText" : "Forward",
-            "BTTShowHUD" : 1
-          }
+          ]
         },
         {
-          "BTTLastUpdatedAt" : 1769167367.96415,
+          "BTTLastUpdatedAt" : 1769779247.7777681,
           "BTTTriggerType" : 160,
           "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Swipe Right",
           "BTTTriggerTypeDescription" : "Triggers scrolling so not very useful",
           "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
           "BTTUUID" : "DEA71A71-FDE9-46CD-8772-3F3001822C3C",
-          "BTTEnabled2" : 0,
           "BTTOrder" : 2,
           "BTTActionsToExecute" : [
             {
@@ -1277,9 +1228,354 @@
           "BTTGestureNotes" : "Triggers scrolling so not very useful",
           "BTTTriggerConfig" : {
             "BTTNoTouchTimeout" : 0,
-            "BTTHUDText" : "Back",
-            "BTTShowHUD" : 1
+            "BTTHUDText" : "Back"
           }
+        },
+        {
+          "BTTLastUpdatedAt" : 1770115850.9541931,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "CA77FA9F-0448-470F-A478-FC04D3CF72EC",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "6",
+          "BTTShortcutKeyCode" : 22,
+          "BTTShortcutAdvancedModifierKeys" : "1048584",
+          "BTTShortcutModifierKeys" : 1048576,
+          "BTTOrder" : 5,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1770115938.706764,
+              "BTTTriggerParentUUID" : "CA77FA9F-0448-470F-A478-FC04D3CF72EC",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "9F14F55B-81A6-4599-8650-1143BD643727",
+              "BTTLayoutIndependentActionChar" : "6",
+              "BTTShortcutToSend" : "59,22",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 12,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1770115845.0337992,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "4A7D6952-7CF1-4EB3-A13D-0F5F8635DF4D",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "1",
+          "BTTShortcutKeyCode" : 18,
+          "BTTShortcutAdvancedModifierKeys" : "1048584",
+          "BTTShortcutModifierKeys" : 1048576,
+          "BTTOrder" : 0,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1770115831.8601298,
+              "BTTTriggerParentUUID" : "4A7D6952-7CF1-4EB3-A13D-0F5F8635DF4D",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "63C3EC57-475A-4233-8BAF-5EF3FD4E88D2",
+              "BTTLayoutIndependentActionChar" : "1",
+              "BTTShortcutToSend" : "59,18",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 12,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1770115864.2767391,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "F50707E8-5A2B-4CE9-AF5D-6B20E6EC18A8",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "8",
+          "BTTShortcutKeyCode" : 28,
+          "BTTShortcutAdvancedModifierKeys" : "1048584",
+          "BTTShortcutModifierKeys" : 1048576,
+          "BTTOrder" : 7,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1770115948.3327079,
+              "BTTTriggerParentUUID" : "F50707E8-5A2B-4CE9-AF5D-6B20E6EC18A8",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "9986C5E7-C3D4-4D53-B32D-E5446A237F03",
+              "BTTLayoutIndependentActionChar" : "8",
+              "BTTShortcutToSend" : "59,28",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 12,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1769779258.4835792,
+          "BTTTriggerType" : 159,
+          "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Swipe Left",
+          "BTTTriggerTypeDescription" : "Triggers scrolling so not very useful",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "AE4F65CA-E5B7-4193-98DD-E24941B22EB4",
+          "BTTOrder" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.9639921,
+              "BTTTriggerParentUUID" : "AE4F65CA-E5B7-4193-98DD-E24941B22EB4",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+              "BTTUUID" : "9A933AEF-A83E-4DF4-B143-0ACF6AFDDE36",
+              "BTTPredefinedActionType" : 124,
+              "BTTPredefinedActionName" : "Trigger Menu Bar Menu-Item",
+              "BTTMenubarPath" : "Go;Forward",
+              "BTTOrder" : 2
+            }
+          ],
+          "BTTGestureNotes" : "Triggers scrolling so not very useful",
+          "BTTTriggerConfig" : {
+            "BTTNoTouchTimeout" : 0,
+            "BTTHUDText" : "Forward"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1770115926.432559,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "BC9024A9-AC51-424B-95B1-C14508B93990",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "5",
+          "BTTShortcutKeyCode" : 23,
+          "BTTShortcutAdvancedModifierKeys" : "1048584",
+          "BTTShortcutModifierKeys" : 1048576,
+          "BTTOrder" : 4,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1770115933.1335201,
+              "BTTTriggerParentUUID" : "BC9024A9-AC51-424B-95B1-C14508B93990",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "A1548750-C246-43B6-9452-71F7A7A8CC56",
+              "BTTLayoutIndependentActionChar" : "5",
+              "BTTShortcutToSend" : "59,23",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 12,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1770115861.4564559,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "4ED2BAD1-D805-4340-A4E7-75EBA96BE720",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "7",
+          "BTTShortcutKeyCode" : 26,
+          "BTTShortcutAdvancedModifierKeys" : "1048584",
+          "BTTShortcutModifierKeys" : 1048576,
+          "BTTOrder" : 6,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1770115942.474227,
+              "BTTTriggerParentUUID" : "4ED2BAD1-D805-4340-A4E7-75EBA96BE720",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "8B261CC2-D45B-46F3-8DD5-4A8ECCE9D674",
+              "BTTLayoutIndependentActionChar" : "7",
+              "BTTShortcutToSend" : "59,26",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 12,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1770115901.9238482,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "3C00E02F-E58F-42C6-8246-41E6A1127892",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "4",
+          "BTTShortcutKeyCode" : 21,
+          "BTTShortcutAdvancedModifierKeys" : "1048584",
+          "BTTShortcutModifierKeys" : 1048576,
+          "BTTOrder" : 3,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1770115910.5032401,
+              "BTTTriggerParentUUID" : "3C00E02F-E58F-42C6-8246-41E6A1127892",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "06153605-DCC0-4972-A70F-1DB4E80B4ADA",
+              "BTTLayoutIndependentActionChar" : "4",
+              "BTTShortcutToSend" : "59,21",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 12,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1770115878.89767,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "9133710F-89D4-4B88-A6DF-5978AB6EFAA7",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "2",
+          "BTTShortcutKeyCode" : 19,
+          "BTTShortcutAdvancedModifierKeys" : "1048584",
+          "BTTShortcutModifierKeys" : 1048576,
+          "BTTOrder" : 1,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1770115887.1428881,
+              "BTTTriggerParentUUID" : "9133710F-89D4-4B88-A6DF-5978AB6EFAA7",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "DE4EF828-258A-4A48-A661-B2F9CAE1917A",
+              "BTTLayoutIndependentActionChar" : "2",
+              "BTTShortcutToSend" : "59,19",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 12,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1770115846.669749,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "098DBFDF-31A2-41CE-9570-E35ADD95E8D1",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "3",
+          "BTTShortcutKeyCode" : 20,
+          "BTTShortcutAdvancedModifierKeys" : "1048584",
+          "BTTShortcutModifierKeys" : 1048576,
+          "BTTOrder" : 2,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1770115894.301029,
+              "BTTTriggerParentUUID" : "098DBFDF-31A2-41CE-9570-E35ADD95E8D1",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "A1B9DBD9-6F7D-4458-8AAB-A0064F4AFC9D",
+              "BTTLayoutIndependentActionChar" : "3",
+              "BTTShortcutToSend" : "59,20",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 12,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1770115865.914372,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "526FD913-ABA3-4D13-AD3A-8D42B01D4249",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTShortcutKeyboardType" : 26733,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "9",
+          "BTTShortcutKeyCode" : 25,
+          "BTTShortcutAdvancedModifierKeys" : "1048584",
+          "BTTShortcutModifierKeys" : 1048576,
+          "BTTOrder" : 8,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1770115953.5124731,
+              "BTTTriggerParentUUID" : "526FD913-ABA3-4D13-AD3A-8D42B01D4249",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "EDB8930F-D95D-4D80-821C-0C819887B973",
+              "BTTLayoutIndependentActionChar" : "9",
+              "BTTShortcutToSend" : "59,25",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 12,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.tinyspeck.slackmacgap",
+      "BTTAppName" : "Slack",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTAppProcessMatchMode" : 2,
+      "BTTAppProcessName" : "Slack",
+      "BTTTriggers" : [
+        {
+          "BTTLastUpdatedAt" : 1769167367.964098,
+          "BTTTriggerType" : 160,
+          "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Swipe Right",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "86E795BA-EC1B-4C53-9F4F-65F51E71DC13",
+          "BTTOrder" : 1,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.9640899,
+              "BTTTriggerParentUUID" : "86E795BA-EC1B-4C53-9F4F-65F51E71DC13",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+              "BTTUUID" : "709EF121-257F-41CF-8658-FC0D096E9B9E",
+              "BTTLayoutIndependentActionChar" : "[",
+              "BTTShortcutToSend" : "55,33",
+              "BTTOrder" : 6
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1769167367.964066,
+          "BTTTriggerType" : 159,
+          "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Swipe Left",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "88D4BB4E-6D9D-4960-A351-3CE7CC42223F",
+          "BTTOrder" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769167367.9640589,
+              "BTTTriggerParentUUID" : "88D4BB4E-6D9D-4960-A351-3CE7CC42223F",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+              "BTTUUID" : "90E17CEC-4036-4EFF-B6D4-0C980501AF6D",
+              "BTTLayoutIndependentActionChar" : "]",
+              "BTTShortcutToSend" : "55,30",
+              "BTTOrder" : 7
+            }
+          ]
         }
       ]
     }
